@@ -2,8 +2,44 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: rgb(67, 86, 105);
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 canvas {
-    
+    border: 2px solid black;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.534);
+    height: 70vh;
+    width: 40vw;
+    display:inline-block;
+    background-color: white;
+    margin: 2em 0;
+}
+
+.tools .color-bucket {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius:50% ;
+}
+.tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10%;
 }
