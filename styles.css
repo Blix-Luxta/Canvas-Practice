@@ -4,20 +4,23 @@ body{
     overflow: hidden;
     background-color: rgb(67, 86, 105);
 }
+project-name{
+
+}
 .main-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 canvas {
     border: 2px solid black;
-    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.534);
-    height: 70vh;
-    width: 40vw;
+    box-shadow: -5px 3px 5px 5px rgba(0, 0, 0, 0.534);
     display:inline-block;
     background-color: white;
-    margin: 2em 0;
+    margin: 1.5em 0;
+    cursor: pointer;
 }
 
 .tools .color-bucket {
@@ -42,4 +45,11 @@ canvas {
     cursor: pointer;
     padding: 5px;
     border-radius: 10%;
+    background-color: rgb(32, 28, 28);
+    color: white;
+    font-weight: bold;
+}
+
+.color-picker {
+    height: 30px;
 }
